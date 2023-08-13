@@ -3,22 +3,22 @@
   "name": "mgba-wasm",
   "icons": [
     {
-      "src": "https://flamboyant-kirch-e1aa17.netlify.app//android-chrome-192x192.png",
+      "src": "https://mgba.netlify.app//android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://flamboyant-kirch-e1aa17.netlify.app//favicon-96x96.png",
+      "src": "https://mgba.netlify.app//favicon-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
       "type": "image/png",
-      "src": "https://flamboyant-kirch-e1aa17.netlify.app//favicon-32x32.png",
+      "src": "https://mgba.netlify.app//favicon-32x32.png",
       "sizes": "32x32"
     }
   ],
-  "start_url": "https://flamboyant-kirch-e1aa17.netlify.app/",
+  "start_url": "https://mgba.netlify.app",
   "background_color": "#231A2B",
   "display": "standalone",
   "theme_color": "#6A37BC"
