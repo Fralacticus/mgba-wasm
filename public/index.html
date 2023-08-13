@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- possible content values: default, black or black-translucent -->
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>mGBA - Wasm</title>
+    <script src="mgba.js"></script>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="manifest" href="../manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+
+        float: left;
+        min-width: 100%;
+      }
+    </style>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body class="container h-screen flex">
+    <div id="app" class="flex flex-col flex-grow"></div>
+    <script type="module" src="../src/main.ts"></script>
+  </body>
+</html>
